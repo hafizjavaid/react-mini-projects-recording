@@ -88,7 +88,7 @@ section h1 {
     max-width: calc(50% - 10px);
   }
 }
-@media (max-width: 969px) {
+@media (max-width: 767px) {
   
   .card {
     flex: 0 0 100%;
