@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --main-bg: rgb(13, 25, 43);
+  --card-bg: rgb(20, 37, 61);
+  --line-color: rgb(47, 65, 91);
+  --white: rgb(255, 255, 255);
+  --blue: rgb(139, 172, 218);
+  --cyan: rgb(0, 255, 247);
+}

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --main-bg: rgb(13, 25, 43);
+  --card-bg: rgb(20, 37, 61);
+  --line-color: rgb(47, 65, 91);
+  --white: rgb(255, 255, 255);
+  --blue: rgb(139, 172, 218);
+  --cyan: rgb(0, 255, 247);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  text-decoration: none;
+}
+body {
+  background: var(--main-bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue);
+}
+.container {
+  max-width: 540px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px;
+}
+.container .card {
+  width: 100%;
+  background: var(--card-bg);
+  padding: 16px;
+}
+.card .img-container {
+  height: 300px;
+}
+.card .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card h3 {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 16px 0px;
+  color: var(--white);
+  transition: .3s;
+}
+.card h3:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
+.card p {
+  max-width: 90%;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: var(--line-color);
+  margin: 16px 0px;
+}
+.eth,
+.clock {
+  display: flex;
+  align-items: center;
+}
+.eth span,
+.clock span {
+  margin-left: 10px;
+  font-weight: 600;
+}
+.eth span {
+  color: var(--cyan);
+}
+.border {
+  height: 2px;
+  background: var(--line-color);
+  margin-bottom: 16px;
+}
+.author {
+  display: flex;
+  align-items: center;
+}
+.author img{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+}
+.author span{
+  margin-left: 10px;
+}
+.author span a{
+  color: #fff;
+  transition: .3s;
+}
+.author span a:hover{
+  color: var(--cyan);
+}
