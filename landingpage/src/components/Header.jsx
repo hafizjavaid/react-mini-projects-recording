@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
 import { useState } from "react";
 
 export const Header = () => {
@@ -11,26 +10,54 @@ export const Header = () => {
           <img src="/images/logo.png" alt="" />
         </div>
         <div className="links">
-          <a href={undefined}>Home</a>
-          <a href={undefined}>Shop</a>
-          <a href={undefined}>Admin</a>
-          <a href={undefined}>Blog</a>
+          <a href="#">Home</a>
+          <a href="#">Blog</a>
+          <a href="#">Shop</a>
+          <a href="#">Admin</a>
         </div>
         <div className="icons">
-          <div className="icon">
+          <span className="icon">
             <i className="fas fa-search"></i>
-          </div>
-          <div className="icon">
-            <span className="number">3</span>
+          </span>
+          <span className="icon">
+            <span className="number">13</span>
             <i className="far fa-heart"></i>
-          </div>
-          <div className="icon">
+          </span>
+          <span className="icon">
             <span className="number">5</span>
             <i className="fas fa-shop"></i>
-          </div>
-          <div onClick={() => setMobileNav(!mobileNav)} className="menu">
-            <i className="fas fa-bars"></i>
-          </div>
+          </span>
+          <span className="menu" onClick={() => setMobileNav(!mobileNav)}>
+            <svg
+              width={48}
+              height={48}
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.75 16H38.25"
+                stroke="#443c37"
+                strokeWidth={4}
+                strokeLinecap="round"
+                strokeLinejoin="bevel"
+              />
+              <path
+                d="M9.75 24H38.25"
+                stroke="#443c37"
+                strokeWidth={4}
+                strokeLinecap="round"
+                strokeLinejoin="bevel"
+              />
+              <path
+                d="M9.75 32H38.25"
+                stroke="#443c37"
+                strokeWidth={4}
+                strokeLinecap="round"
+                strokeLinejoin="bevel"
+              />
+            </svg>
+          </span>
         </div>
       </div>
       <div className={`mobile-nav ${mobileNav ? "active" : ""}`}>
@@ -39,10 +66,10 @@ export const Header = () => {
             Home
           </a>
           <a onClick={() => setMobileNav(!mobileNav)} href="#">
-            Shop
+            Blog
           </a>
           <a onClick={() => setMobileNav(!mobileNav)} href="#">
-            Blog
+            Shop
           </a>
           <a onClick={() => setMobileNav(!mobileNav)} href="#">
             Admin
